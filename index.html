@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Consulta de Clima</h1>
+
+    <div class="busca">
+      <input
+        type="text"
+        id="cidadeInput"
+        placeholder="Digite uma cidade"
+        aria-label="Digite uma cidade"
+      >
+      <button id="buscarBtn">Buscar</button>
+    </div>
+
+    <section id="mensagem" class="mensagem"></section>
+
+    <section id="resultado" class="resultado hidden">
+      <div class="card principal">
+        <h2 id="cidadeNome">Cidade</h2>
+        <p id="temperaturaAtual">--°C</p>
+        <p id="ventoAtual">Vento: -- km/h</p>
+      </div>
+
+      <div class="card previsao">
+        <h3>Próximos dias</h3>
+        <div id="previsaoLista" class="previsao-lista"></div>
+      </div>
+
+      <p class="credito">
+        Dados meteorológicos por
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+          Open-Meteo
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
