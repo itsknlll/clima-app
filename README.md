@@ -21,7 +21,9 @@ Aplicação web de consulta de clima desenvolvida com HTML, CSS e JavaScript, co
 
 1. Clone o repositório:
 
+```bash
 git clone git@github.com:itsknlll/clima-app.git
+```
 
 2. Abra o arquivo index.html no navegador
 
